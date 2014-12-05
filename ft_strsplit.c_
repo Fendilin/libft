@@ -6,7 +6,7 @@
 /*   By: vterzian <vterzian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/12 15:17:31 by vterzian          #+#    #+#             */
-/*   Updated: 2014/12/05 21:22:13 by vterzian         ###   ########.fr       */
+/*   Updated: 2014/12/05 21:10:47 by vterzian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,8 +72,22 @@ char			**ft_strsplit(char const *s, char c)
 			tab[n++] = ft_strsub(tmp, i, j - i);
 		i = j;
 	}
-	tab[nbw] = NULL;
+	tab[n] = '\0';
 	ft_strdel(&tmp);
 	return (tab);
 }
 
+int	main(void)
+{
+	char	s[] = "   salut   !   ";
+	char	c = ' ';
+	char	**tab;
+	size_t 	i;
+
+	tab = ft_strsplit(s, c);
+	for(i = 0; i < ft_count_word(s, c); i++)
+		ft_putendl(tab[i]);
+	if (tab[2] == NULL)
+		ft_putendl("Sucess!!");
+	return (0);
+}
