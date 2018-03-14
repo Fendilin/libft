@@ -8,6 +8,8 @@
    * [Part3 - Bonus](#part3---bonus)
   
 ## Introduction
+First project at 42.
+
 C programming can be very tedious when one doesn’t have access to those highly useful
 standard functions. This project made me to take the time to re-write those functions,
 understand them, and learn to use them. This library helped me for almost all my C
