@@ -1,11 +1,11 @@
 # Libft
 ## Table of Content
-1. Introduction
-1. Usage
-1. Content
-   * Part1 - libc functions
-   * Part2 - Additionnal functions
-   * Part3 - Bonus
+1. [Introduction](#introduction)
+1. [Usage](#usage)
+1. [Content](#content)
+   * [Part1 libc functions](#part1-libc-functions)
+   * [Part2 - Additionnal functions](#part2-additionnal-functions)
+   * [Part3 - Bonus](#part3-bonus)
   
 ## Introduction
 C programming can be very tedious when one doesn’t have access to those highly useful
@@ -37,7 +37,7 @@ To clean all project an run it again use `re` makefile rule
 ```
 ## Content
 
-### Part1 - Libc functions
+### Part1 Libc functions
 In this first part, I had to re-code a set of the libc functions, as defined in their man.
 
 * [memset](https://github.com/Fendilin/libft/blob/master/ft_memset.c)
@@ -100,7 +100,7 @@ libc, or included in a different form.
 |[ft_putendl_fd](https://github.com/Fendilin/libft/blob/master/ft_putendl_fd.c)| void ft_putendl_fd(char const *s, int fd);                      | Outputs the string s to the file descriptor fd followed by a ’\n’.                                                                                       | The string to output.                | The file descriptor      | NULL                | NULL                                                        |
 |[ft_putnbr_fd](https://github.com/Fendilin/libft/blob/master/ft_putnbr_fd.c)  | void ft_putnbr_fd(int n, int fd);                               | Outputs the integer n to the file descriptor fd.                                                                                                         | The integer to print.                | The file descriptor      | NULL                | NULL                                                        |
 
-### Part3 - Bonus
+### Part3 Bonus
 
 I had to create function wich allow me to manipuate my lists more easilly.
 
